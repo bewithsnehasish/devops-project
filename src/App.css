@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #dbeafe, #e0e7ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.toggle-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-button {
+  background: #1f2937;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.toggle-button:hover {
+  background: #111827;
+}
+
+body.dark .toggle-button {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body.dark .toggle-button:hover {
+  background: #e2e8f0;
+}
+
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .card {
+  background: #1e293b;
+  color: #f1f5f9;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon-circle {
+  background-color: #2563eb;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.github-button {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.github-button:hover {
+  background-color: #111827;
+}
+
+body.dark .github-button {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body.dark .github-button:hover {
+  background-color: #e2e8f0;
+}
+
+.card{
+  color:black;
+}
